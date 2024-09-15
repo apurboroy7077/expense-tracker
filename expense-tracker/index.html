@@ -117,7 +117,100 @@
         </div>
       </div>
     </header>
-
     <!-- HEADER SECTION ENDS---------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <section>
+      <div class="px-5 md:px-7 py-16 lg:py-32 flex justify-center items-center">
+        <div class="w-full max-w-screen-xl">
+          <div class="lg:hidden">
+            <div class="bg-[#3E5981] px-5 py-5 rounded">
+              <div class="text-[white] text-center">Add a Expense</div>
+              <div class="mt-7">
+                <select
+                  class="w-full px-5 py-2 rounded outline-none border-none text-center"
+                >
+                  <option>Please Select a Category</option>
+                </select>
+              </div>
+              <div class="mt-7">
+                <input
+                  type="text"
+                  placeholder="Amount"
+                  class="w-full px-5 py-2 rounded outline-none border-none text-center"
+                />
+              </div>
+              <div class="mt-7">
+                <textarea
+                  type="text"
+                  placeholder="Amount"
+                  class="w-full px-5 py-2 rounded outline-none border-none text-center"
+                ></textarea>
+              </div>
+              <div class="mt-7">
+                <button
+                  class="w-full px-5 py-2 rounded outline-none border-none text-center bg-[#283241] text-[white] active:scale-[0.95]"
+                >
+                  Add
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="hidden lg:block">
+            <div class="bg-[#3E5981] px-5 xl:px-10 py-5 xl:py-10 rounded-lg">
+              <div class="flex justify-between items-center">
+                <div class="w-[15%]">
+                  <div>
+                    <select
+                      class="w-full px-5 py-3 xl:py-4 rounded-lg outline-none border-none text-center text-sm xl:text-base bg-[#283241] text-[white]"
+                    >
+                      <option>Category</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="w-[35%]">
+                  <div class="flex items-center rounded-lg overflow-hidden">
+                    <div
+                      class="bg-[#283241] text-sm xl:text-base px-3 xl:px-5 py-3 xl:py-4 text-[white] w-fit"
+                    >
+                      Description
+                    </div>
+                    <div class="w-full">
+                      <input
+                        type="text"
+                        class="w-full py-[0.55rem] xl:py-[0.93rem] outline-none border-none px-2"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="w-[20%]">
+                  <div class="flex items-center rounded-lg overflow-hidden">
+                    <div
+                      class="bg-[#283241] text-sm xl:text-base px-3 xl:px-5 py-3 xl:py-4 text-[white] w-fit"
+                    >
+                      Amount
+                    </div>
+                    <div class="w-full">
+                      <input
+                        type="text"
+                        class="w-full py-[0.55rem] xl:py-[0.93rem] outline-none border-none px-2"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="w-[15%]">
+                  <div>
+                    <button
+                      class="bg-[#283241] text-sm xl:text-base px-5 py-3 xl:py-4 text-[white] w-full rounded-lg hover:shadow-lg active:scale-[0.95]"
+                    >
+                      Add Expense
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

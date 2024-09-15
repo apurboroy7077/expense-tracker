@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="/css/main/main.css" />
+    <script
+      type="module"
+      src="/js/expense-tracker-page/scriptsOfExpenseTrackerPage.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <!-- HEADER SECTION STARTS-------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <header>
+      <div class="md:hidden">
+        <div class="bg-[#243B64] py-5">
+          <div class="flex justify-between items-center px-5">
+            <div class="flex items-center gap-2">
+              <span class="text-[white] font-bold text-2xl"
+                ><i class="fa-solid fa-dollar-sign"></i
+              ></span>
+              <span class="text-[white] font-bold text-lg"
+                >Expense Tracker</span
+              >
+            </div>
+            <div>
+              <button class="menu-button-small-screen-ar7">
+                <i
+                  class="fa-solid fa-bars text-[white] text-xl active:scale-[0.95]"
+                ></i>
+              </button>
+              <span class="close-menu-button-small-screen-ar7 hidden">
+                <i
+                  class="fa-solid fa-xmark text-[white] text-2xl active:scale-[0.95]"
+                ></i>
+              </span>
+            </div>
+          </div>
+          <div
+            class="small-screen-menu-list-ar7 h-0 overflow-hidden transition-all duration-500"
+          >
+            <div class="mt-5">
+              <ul class="flex flex-col">
+                <a href="./">
+                  <li
+                    class="text-[white] font-medium hover:bg-[#173b34] px-5 py-2 opacity-[0.9]"
+                  >
+                    Home
+                  </li>
+                </a>
+                <a href="./">
+                  <li
+                    class="text-[white] font-medium hover:bg-[#173b34] px-5 py-2 opacity-[0.9]"
+                  >
+                    Reports
+                  </li>
+                </a>
+                <a href="./">
+                  <li
+                    class="text-[white] font-medium hover:bg-[#173b34] px-5 py-2 opacity-[0.9]"
+                  >
+                    Leaderboard
+                  </li>
+                </a>
+                <a href="./">
+                  <li
+                    class="text-[white] font-medium hover:bg-[#173b34] px-5 py-2 opacity-[0.9]"
+                  >
+                    Login
+                  </li>
+                </a>
+                <a href="./">
+                  <li
+                    class="text-[white] font-medium hover:bg-[#173b34] px-5 py-2 opacity-[0.9]"
+                  >
+                    Sign Up
+                  </li>
+                </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hidden md:block">
+        <div class="bg-[#243B64] px-7 py-7 flex justify-center items-center">
+          <div
+            class="flex justify-between items-center w-[100%] max-w-screen-xl"
+          >
+            <div class="flex items-center gap-2">
+              <span class="text-[white] font-bold text-2xl lg:text-3xl"
+                ><i class="fa-solid fa-dollar-sign"></i
+              ></span>
+              <span class="text-[white] font-bold text-lg lg:text-xl lg:ml-1"
+                >Expense Tracker</span
+              >
+            </div>
+            <div class="flex items-center gap-5 lg:gap-16">
+              <button class="text-[white] font-medium">Home</button>
+              <button class="text-[white] opacity-[0.7] font-medium">
+                Reports
+              </button>
+              <button class="text-[white] opacity-[0.7] font-medium">
+                Leaderboard
+              </button>
+            </div>
+            <div class="flex items-center gap-5 lg:gap-10">
+              <button class="text-[white] font-medium">Login</button>
+              <button
+                class="text-[white] bg-[#cb8461] px-5 py-2 rounded active:scale-[0.95] hover:scale-[1.02] transition-all duration-300"
+              >
+                Sign Up
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- HEADER SECTION ENDS---------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  </body>
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leaderboard</title>
+    <link rel="stylesheet" href="/css/main/main.css" />
+    <script
+      type="module"
+      src="/js/leaderboard-page-script/scriptsOfLeaderboardPage.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <!-- HEADER SECTION STARTS-------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <header>
+      <div class="md:hidden">
+        <div class="bg-[#243B64] py-5">
+          <div class="flex justify-between items-center px-5">
+            <div class="flex items-center gap-2">
+              <span class="text-[white] font-bold text-2xl"
+                ><i class="fa-solid fa-dollar-sign"></i
+              ></span>
+              <span class="text-[white] font-bold text-lg"
+                >Expense Tracker</span
+              >
+            </div>
+            <div>
+              <button class="menu-button-small-screen-ar7">
+                <i
+                  class="fa-solid fa-bars text-[white] text-xl active:scale-[0.95]"
+                ></i>
+              </button>
+              <span class="close-menu-button-small-screen-ar7 hidden">
+                <i
+                  class="fa-solid fa-xmark text-[white] text-2xl active:scale-[0.95]"
+                ></i>
+              </span>
+            </div>
+          </div>
+          <div
+            class="small-screen-menu-list-ar7 h-0 overflow-hidden transition-all duration-500"
+          >
+            <div class="mt-5">
+              <ul class="flex flex-col">
+                <a href="./">
+                  <li
+                    class="text-[white] font-medium hover:bg-[#173b34] px-5 py-2 opacity-[0.9]"
+                  >
+                    Home
+                  </li>
+                </a>
+                <a href="./">
+                  <li
+                    class="text-[white] font-medium hover:bg-[#173b34] px-5 py-2 opacity-[0.9]"
+                  >
+                    Reports
+                  </li>
+                </a>
+                <a href="./">
+                  <li
+                    class="text-[white] font-medium hover:bg-[#173b34] px-5 py-2 opacity-[0.9]"
+                  >
+                    Leaderboard
+                  </li>
+                </a>
+                <a href="./">
+                  <li
+                    class="text-[white] font-medium hover:bg-[#173b34] px-5 py-2 opacity-[0.9]"
+                  >
+                    Login
+                  </li>
+                </a>
+                <a href="./">
+                  <li
+                    class="text-[white] font-medium hover:bg-[#173b34] px-5 py-2 opacity-[0.9]"
+                  >
+                    Sign Up
+                  </li>
+                </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hidden md:block">
+        <div class="bg-[#243B64] px-7 py-7 flex justify-center items-center">
+          <div
+            class="flex justify-between items-center w-[100%] max-w-screen-xl"
+          >
+            <div class="flex items-center gap-2">
+              <span class="text-[white] font-bold text-2xl lg:text-3xl"
+                ><i class="fa-solid fa-dollar-sign"></i
+              ></span>
+              <span class="text-[white] font-bold text-lg lg:text-xl lg:ml-1"
+                >Expense Tracker</span
+              >
+            </div>
+            <div class="flex items-center gap-5 lg:gap-16">
+              <button class="text-[white] font-medium">Home</button>
+              <button class="text-[white] opacity-[0.7] font-medium">
+                Reports
+              </button>
+              <button class="text-[white] opacity-[0.7] font-medium">
+                Leaderboard
+              </button>
+            </div>
+            <div class="flex items-center gap-5 lg:gap-10">
+              <button class="text-[white] font-medium">Login</button>
+              <button
+                class="text-[white] bg-[#cb8461] px-5 py-2 rounded active:scale-[0.95] hover:scale-[1.02] transition-all duration-300"
+              >
+                Sign Up
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- HEADER SECTION ENDS---------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- LEADERBOARD SECTION STARTS-------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <section>
+      <div class="px-5 md:px-7 py-16 lg:py-32 flex justify-center items-center">
+        <div class="w-full max-w-screen-xl">
+          <div class="lg:hidden">
+            <div
+              class="bg-[#D3E9F7] px-5 sm:px-10 py-10 sm:py-16 rounded-lg shadow-lg"
+            >
+              <div>
+                <div class="flex items-center gap-5 justify-center">
+                  <div class="text-center font-medium">LEADERBOARD</div>
+                  <div>
+                    <i class="fa-solid fa-trophy text-3xl text-[#FFD700]"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-10">
+                <ul class="flex flex-col gap-5 sm:gap-10">
+                  <li>
+                    <div class="border-[2px] border-[grey] bg-[white]">
+                      <table class="table-auto border-collapse border w-full">
+                        <tr>
+                          <td
+                            class="border border-[grey] p-4 w-1/2 text-center font-medium"
+                          >
+                            Position
+                          </td>
+                          <td
+                            class="border border-[grey] p-4 w-1/2 text-center"
+                          >
+                            1
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            class="border border-[grey] p-4 w-1/2 text-center font-medium"
+                          >
+                            Name
+                          </td>
+                          <td
+                            class="border border-[grey] p-4 w-1/2 text-center"
+                          >
+                            Michael Phelps
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            class="border border-[grey] p-4 w-1/2 text-center font-medium"
+                          >
+                            Expenses
+                          </td>
+                          <td
+                            class="border border-[grey] p-4 w-1/2 text-center"
+                          >
+                            350000
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="border-[2px] border-[grey] bg-[white]">
+                      <table class="table-auto border-collapse border w-full">
+                        <tr>
+                          <td
+                            class="border border-[grey] p-4 w-1/2 text-center font-medium"
+                          >
+                            Position
+                          </td>
+                          <td
+                            class="border border-[grey] p-4 w-1/2 text-center"
+                          >
+                            1
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            class="border border-[grey] p-4 w-1/2 text-center font-medium"
+                          >
+                            Name
+                          </td>
+                          <td
+                            class="border border-[grey] p-4 w-1/2 text-center"
+                          >
+                            Michael Phelps
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            class="border border-[grey] p-4 w-1/2 text-center font-medium"
+                          >
+                            Expenses
+                          </td>
+                          <td
+                            class="border border-[grey] p-4 w-1/2 text-center"
+                          >
+                            350000
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="border-[2px] border-[grey] bg-[white]">
+                      <table class="table-auto border-collapse border w-full">
+                        <tr>
+                          <td
+                            class="border border-[grey] p-4 w-1/2 text-center font-medium"
+                          >
+                            Position
+                          </td>
+                          <td
+                            class="border border-[grey] p-4 w-1/2 text-center"
+                          >
+                            1
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            class="border border-[grey] p-4 w-1/2 text-center font-medium"
+                          >
+                            Name
+                          </td>
+                          <td
+                            class="border border-[grey] p-4 w-1/2 text-center"
+                          >
+                            Michael Phelps
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            class="border border-[grey] p-4 w-1/2 text-center font-medium"
+                          >
+                            Expenses
+                          </td>
+                          <td
+                            class="border border-[grey] p-4 w-1/2 text-center"
+                          >
+                            350000
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="hidden lg:block">
+            <div class="bg-[#D3E9F7] px-10 py-16 rounded-lg">
+              <div>
+                <div class="flex items-center gap-7 justify-center">
+                  <div class="text-center font-medium text-xl xl:text-2xl">
+                    LEADERBOARD
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-trophy text-5xl text-[#FFD700]"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-10 xl:mt-16">
+                <div class="rounded-lg overflow-hidden">
+                  <table class="w-full">
+                    <thead>
+                      <tr class="bg-[#3E5981] text-center text-[white]">
+                        <th class="px-2 py-5 w-[33.33%]">Position</th>
+                        <th class="px-2 py-5 w-[33.33%]">Name</th>
+                        <th class="px-2 py-5 w-[33.33%]">Expenses</th>
+                      </tr>
+                    </thead>
+                    <tbody class="bg-[#F0F4F9] text-black">
+                      <tr class="rounded-md">
+                        <td
+                          class="px-2 py-10 w-[33.33%] font-medium text-center"
+                        >
+                          1
+                        </td>
+                        <td
+                          class="px-2 py-5 w-[33.33%] text-center opacity-[0.8]"
+                        >
+                          Michael Phelps
+                        </td>
+                        <td
+                          class="px-2 py-5 w-[33.33%] text-center opacity-[0.8]"
+                        >
+                          350000
+                        </td>
+                      </tr>
+                      <tr class="rounded-md">
+                        <td
+                          class="px-2 py-10 w-[33.33%] font-medium text-center"
+                        >
+                          2
+                        </td>
+                        <td
+                          class="px-2 py-5 w-[33.33%] text-center opacity-[0.8]"
+                        >
+                          Gordon Ramsey
+                        </td>
+                        <td
+                          class="px-2 py-5 w-[33.33%] text-center opacity-[0.8]"
+                        >
+                          312000
+                        </td>
+                      </tr>
+                      <tr class="rounded-md">
+                        <td
+                          class="px-2 py-10 w-[33.33%] font-medium text-center"
+                        >
+                          3
+                        </td>
+                        <td
+                          class="px-2 py-5 w-[33.33%] text-center opacity-[0.8]"
+                        >
+                          Dave Batista
+                        </td>
+                        <td
+                          class="px-2 py-5 w-[33.33%] text-center opacity-[0.8]"
+                        >
+                          210000
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- LEADERBOARD SECTION ENDS-------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  </body>
+</html>

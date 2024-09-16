@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Expense Tracker</title>
+    <title>Reports</title>
     <link rel="stylesheet" href="/css/main/main.css" />
     <script
       type="module"
-      src="/js/expense-tracker-page/scriptsOfExpenseTrackerPage.js"
+      src="/js/reports-page/scriptsOfReportsPage.js"
       defer
     ></script>
   </head>
@@ -118,39 +118,27 @@
       </div>
     </header>
     <!-- HEADER SECTION ENDS---------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-    <!-- ADDING EXPENSE SECTION STARTS-------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- SEARCH BY DATE SECTION STARTS-------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
     <section>
       <div class="px-5 md:px-7 py-16 lg:py-32 flex justify-center items-center">
         <div class="w-full max-w-screen-xl">
           <div class="lg:hidden">
             <div class="bg-[#3E5981] px-5 py-5 rounded">
-              <div class="text-[white] text-center">Add a Expense</div>
-              <div class="mt-7">
-                <select
-                  class="w-full px-5 py-2 rounded outline-none border-none text-center"
-                >
-                  <option>Please Select a Category</option>
-                </select>
-              </div>
+              <div class="text-[white] text-center">Search by Date</div>
+
               <div class="mt-7">
                 <input
-                  type="text"
+                  type="date"
                   placeholder="Amount"
                   class="w-full px-5 py-2 rounded outline-none border-none text-center"
                 />
               </div>
-              <div class="mt-7">
-                <textarea
-                  type="text"
-                  placeholder="Amount"
-                  class="w-full px-5 py-2 rounded outline-none border-none text-center"
-                ></textarea>
-              </div>
+
               <div class="mt-7">
                 <button
                   class="w-full px-5 py-2 rounded outline-none border-none text-center bg-[#283241] text-[white] active:scale-[0.95]"
                 >
-                  Add
+                  SEARCH
                 </button>
               </div>
             </div>
@@ -213,8 +201,8 @@
         </div>
       </div>
     </section>
-    <!-- ADDING EXPENSE SECTION ENDS-------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-    <!-- EXPENSE RECORD HISTORY SECTION STARTS-------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- SEARCH BY DATE SECTION ENDS-------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- SEARCH RESULT SECTION STARTS-------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
     <section>
       <div class="px-5 md:px-7 py-16 lg:py-32 flex justify-center items-center">
         <div class="w-full max-w-screen-xl">
@@ -222,206 +210,237 @@
             <div
               class="bg-[#D3E9F7] px-5 sm:px-10 py-10 sm:py-16 rounded-lg shadow-lg"
             >
-              <ul class="flex flex-col gap-5 sm:gap-10">
-                <li>
-                  <div class="border-[2px] border-[grey] bg-[white]">
-                    <table class="table-auto border-collapse border w-full">
-                      <tr>
-                        <td
-                          class="border border-[grey] p-4 w-1/2 text-center font-medium"
-                        >
-                          Category
-                        </td>
-                        <td class="border border-[grey] p-4 w-1/2 text-center">
-                          Gaming
-                        </td>
-                      </tr>
-                      <tr>
-                        <td
-                          class="border border-[grey] p-4 w-1/2 text-center font-medium"
-                        >
-                          Date
-                        </td>
-                        <td class="border border-[grey] p-4 w-1/2 text-center">
-                          15-03-2023
-                        </td>
-                      </tr>
-                      <tr>
-                        <td
-                          class="border border-[grey] p-4 w-1/2 text-center font-medium"
-                        >
-                          Amount
-                        </td>
-                        <td class="border border-[grey] p-4 w-1/2 text-center">
-                          350
-                        </td>
-                      </tr>
-                      <tr>
-                        <td
-                          class="border border-[grey] p-4 w-1/2 text-center font-medium"
-                        >
-                          Description
-                        </td>
-                        <td class="border border-[grey] p-4 w-1/2 text-center">
-                          Lorem ipsum dolor sit amet.
-                        </td>
-                      </tr>
+              <div>
+                <div class="text-center text-lg font-medium">
+                  Search Results
+                </div>
+              </div>
+              <div class="mt-5">
+                <ul class="flex flex-col gap-5 sm:gap-10">
+                  <li>
+                    <div class="border-[2px] border-[grey] bg-[white]">
+                      <table class="table-auto border-collapse border w-full">
+                        <tr>
+                          <td
+                            class="border border-[grey] p-4 w-1/2 text-center font-medium"
+                          >
+                            Category
+                          </td>
+                          <td
+                            class="border border-[grey] p-4 w-1/2 text-center"
+                          >
+                            Gaming
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            class="border border-[grey] p-4 w-1/2 text-center font-medium"
+                          >
+                            Date
+                          </td>
+                          <td
+                            class="border border-[grey] p-4 w-1/2 text-center"
+                          >
+                            15-03-2023
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            class="border border-[grey] p-4 w-1/2 text-center font-medium"
+                          >
+                            Amount
+                          </td>
+                          <td
+                            class="border border-[grey] p-4 w-1/2 text-center"
+                          >
+                            350
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            class="border border-[grey] p-4 w-1/2 text-center font-medium"
+                          >
+                            Description
+                          </td>
+                          <td
+                            class="border border-[grey] p-4 w-1/2 text-center"
+                          >
+                            Lorem ipsum dolor sit amet.
+                          </td>
+                        </tr>
 
-                      <tr>
-                        <td
-                          class="border border-[grey] p-4 w-1/2 text-center font-medium"
-                          colspan="2"
-                        >
-                          <div class="flex justify-center gap-3">
-                            <button
-                              class="bg-[orange] px-5 py-1 rounded text-[#005AFF] hover:shadow-sm active:scale-[0.95] w-[6rem]"
-                            >
-                              Edit
-                            </button>
-                            <button
-                              class="bg-[red] px-5 py-1 rounded text-[white] hover:shadow-sm active:scale-[0.95] w-[6rem]"
-                            >
-                              Delete
-                            </button>
-                          </div>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-                </li>
-                <li>
-                  <div class="border-[2px] border-[grey] bg-[white]">
-                    <table class="table-auto border-collapse border w-full">
-                      <tr>
-                        <td
-                          class="border border-[grey] p-4 w-1/2 text-center font-medium"
-                        >
-                          Category
-                        </td>
-                        <td class="border border-[grey] p-4 w-1/2 text-center">
-                          Gaming
-                        </td>
-                      </tr>
-                      <tr>
-                        <td
-                          class="border border-[grey] p-4 w-1/2 text-center font-medium"
-                        >
-                          Date
-                        </td>
-                        <td class="border border-[grey] p-4 w-1/2 text-center">
-                          15-03-2023
-                        </td>
-                      </tr>
-                      <tr>
-                        <td
-                          class="border border-[grey] p-4 w-1/2 text-center font-medium"
-                        >
-                          Amount
-                        </td>
-                        <td class="border border-[grey] p-4 w-1/2 text-center">
-                          350
-                        </td>
-                      </tr>
-                      <tr>
-                        <td
-                          class="border border-[grey] p-4 w-1/2 text-center font-medium"
-                        >
-                          Description
-                        </td>
-                        <td class="border border-[grey] p-4 w-1/2 text-center">
-                          Lorem ipsum dolor sit amet.
-                        </td>
-                      </tr>
+                        <tr>
+                          <td
+                            class="border border-[grey] p-4 w-1/2 text-center font-medium"
+                            colspan="2"
+                          >
+                            <div class="flex justify-center gap-3">
+                              <button
+                                class="bg-[orange] px-5 py-1 rounded text-[#005AFF] hover:shadow-sm active:scale-[0.95] w-[6rem]"
+                              >
+                                Edit
+                              </button>
+                              <button
+                                class="bg-[red] px-5 py-1 rounded text-[white] hover:shadow-sm active:scale-[0.95] w-[6rem]"
+                              >
+                                Delete
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="border-[2px] border-[grey] bg-[white]">
+                      <table class="table-auto border-collapse border w-full">
+                        <tr>
+                          <td
+                            class="border border-[grey] p-4 w-1/2 text-center font-medium"
+                          >
+                            Category
+                          </td>
+                          <td
+                            class="border border-[grey] p-4 w-1/2 text-center"
+                          >
+                            Gaming
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            class="border border-[grey] p-4 w-1/2 text-center font-medium"
+                          >
+                            Date
+                          </td>
+                          <td
+                            class="border border-[grey] p-4 w-1/2 text-center"
+                          >
+                            15-03-2023
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            class="border border-[grey] p-4 w-1/2 text-center font-medium"
+                          >
+                            Amount
+                          </td>
+                          <td
+                            class="border border-[grey] p-4 w-1/2 text-center"
+                          >
+                            350
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            class="border border-[grey] p-4 w-1/2 text-center font-medium"
+                          >
+                            Description
+                          </td>
+                          <td
+                            class="border border-[grey] p-4 w-1/2 text-center"
+                          >
+                            Lorem ipsum dolor sit amet.
+                          </td>
+                        </tr>
 
-                      <tr>
-                        <td
-                          class="border border-[grey] p-4 w-1/2 text-center font-medium"
-                          colspan="2"
-                        >
-                          <div class="flex justify-center gap-3">
-                            <button
-                              class="bg-[orange] px-5 py-1 rounded text-[#005AFF] hover:shadow-sm active:scale-[0.95] w-[6rem]"
-                            >
-                              Edit
-                            </button>
-                            <button
-                              class="bg-[red] px-5 py-1 rounded text-[white] hover:shadow-sm active:scale-[0.95] w-[6rem]"
-                            >
-                              Delete
-                            </button>
-                          </div>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-                </li>
-                <li>
-                  <div class="border-[2px] border-[grey] bg-[white]">
-                    <table class="table-auto border-collapse border w-full">
-                      <tr>
-                        <td
-                          class="border border-[grey] p-4 w-1/2 text-center font-medium"
-                        >
-                          Category
-                        </td>
-                        <td class="border border-[grey] p-4 w-1/2 text-center">
-                          Gaming
-                        </td>
-                      </tr>
-                      <tr>
-                        <td
-                          class="border border-[grey] p-4 w-1/2 text-center font-medium"
-                        >
-                          Date
-                        </td>
-                        <td class="border border-[grey] p-4 w-1/2 text-center">
-                          15-03-2023
-                        </td>
-                      </tr>
-                      <tr>
-                        <td
-                          class="border border-[grey] p-4 w-1/2 text-center font-medium"
-                        >
-                          Amount
-                        </td>
-                        <td class="border border-[grey] p-4 w-1/2 text-center">
-                          350
-                        </td>
-                      </tr>
-                      <tr>
-                        <td
-                          class="border border-[grey] p-4 w-1/2 text-center font-medium"
-                        >
-                          Description
-                        </td>
-                        <td class="border border-[grey] p-4 w-1/2 text-center">
-                          Lorem ipsum dolor sit amet.
-                        </td>
-                      </tr>
+                        <tr>
+                          <td
+                            class="border border-[grey] p-4 w-1/2 text-center font-medium"
+                            colspan="2"
+                          >
+                            <div class="flex justify-center gap-3">
+                              <button
+                                class="bg-[orange] px-5 py-1 rounded text-[#005AFF] hover:shadow-sm active:scale-[0.95] w-[6rem]"
+                              >
+                                Edit
+                              </button>
+                              <button
+                                class="bg-[red] px-5 py-1 rounded text-[white] hover:shadow-sm active:scale-[0.95] w-[6rem]"
+                              >
+                                Delete
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="border-[2px] border-[grey] bg-[white]">
+                      <table class="table-auto border-collapse border w-full">
+                        <tr>
+                          <td
+                            class="border border-[grey] p-4 w-1/2 text-center font-medium"
+                          >
+                            Category
+                          </td>
+                          <td
+                            class="border border-[grey] p-4 w-1/2 text-center"
+                          >
+                            Gaming
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            class="border border-[grey] p-4 w-1/2 text-center font-medium"
+                          >
+                            Date
+                          </td>
+                          <td
+                            class="border border-[grey] p-4 w-1/2 text-center"
+                          >
+                            15-03-2023
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            class="border border-[grey] p-4 w-1/2 text-center font-medium"
+                          >
+                            Amount
+                          </td>
+                          <td
+                            class="border border-[grey] p-4 w-1/2 text-center"
+                          >
+                            350
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            class="border border-[grey] p-4 w-1/2 text-center font-medium"
+                          >
+                            Description
+                          </td>
+                          <td
+                            class="border border-[grey] p-4 w-1/2 text-center"
+                          >
+                            Lorem ipsum dolor sit amet.
+                          </td>
+                        </tr>
 
-                      <tr>
-                        <td
-                          class="border border-[grey] p-4 w-1/2 text-center font-medium"
-                          colspan="2"
-                        >
-                          <div class="flex justify-center gap-3">
-                            <button
-                              class="bg-[orange] px-5 py-1 rounded text-[#005AFF] hover:shadow-sm active:scale-[0.95] w-[6rem]"
-                            >
-                              Edit
-                            </button>
-                            <button
-                              class="bg-[red] px-5 py-1 rounded text-[white] hover:shadow-sm active:scale-[0.95] w-[6rem]"
-                            >
-                              Delete
-                            </button>
-                          </div>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-                </li>
-              </ul>
+                        <tr>
+                          <td
+                            class="border border-[grey] p-4 w-1/2 text-center font-medium"
+                            colspan="2"
+                          >
+                            <div class="flex justify-center gap-3">
+                              <button
+                                class="bg-[orange] px-5 py-1 rounded text-[#005AFF] hover:shadow-sm active:scale-[0.95] w-[6rem]"
+                              >
+                                Edit
+                              </button>
+                              <button
+                                class="bg-[red] px-5 py-1 rounded text-[white] hover:shadow-sm active:scale-[0.95] w-[6rem]"
+                              >
+                                Delete
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="hidden lg:block">
@@ -533,6 +552,6 @@
         </div>
       </div>
     </section>
-    <!-- EXPENSE RECORD HISTORY SECTION ENDS-------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- SEARCH RESULT SECTION ENDS-------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
   </body>
 </html>

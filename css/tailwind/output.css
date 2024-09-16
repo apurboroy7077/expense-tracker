@@ -570,6 +570,10 @@ video {
   margin-top: 1.75rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -610,12 +614,20 @@ video {
   width: 20%;
 }
 
+.w-\[25\%\] {
+  width: 25%;
+}
+
 .w-\[30\%\] {
   width: 30%;
 }
 
 .w-\[35\%\] {
   width: 35%;
+}
+
+.w-\[65\%\] {
+  width: 65%;
 }
 
 .w-\[6rem\] {
@@ -631,12 +643,16 @@ video {
   width: 100%;
 }
 
-.w-\[10\%\] {
-  width: 10%;
+.w-\[70\%\] {
+  width: 70%;
 }
 
-.w-\[25\%\] {
-  width: 25%;
+.w-\[75\%\] {
+  width: 75%;
+}
+
+.w-\[80\%\] {
+  width: 80%;
 }
 
 .max-w-\[60rem\] {
@@ -778,6 +794,11 @@ video {
   background-color: rgb(240 238 240 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#F0F4F9\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 244 249 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#cb8461\] {
   --tw-bg-opacity: 1;
   background-color: rgb(203 132 97 / var(--tw-bg-opacity));
@@ -798,9 +819,8 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#F0F4F9\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(240 244 249 / var(--tw-bg-opacity));
+.bg-\[\] {
+  background-color: ;
 }
 
 .p-2 {
@@ -876,16 +896,6 @@ video {
   padding-bottom: 0.55rem;
 }
 
-.px-32 {
-  padding-left: 8rem;
-  padding-right: 8rem;
-}
-
-.py-32 {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-}
-
 .text-center {
   text-align: center;
 }
@@ -915,6 +925,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -933,28 +948,9 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-\[black\] {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-.text-\[center\] {
-  color: center;
-}
-
-.text-\[\#3b3b3b\] {
-  --tw-text-opacity: 1;
-  color: rgb(59 59 59 / var(--tw-text-opacity));
-}
-
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .opacity-\[0\.6\] {
@@ -965,12 +961,12 @@ video {
   opacity: 0.7;
 }
 
-.opacity-\[0\.9\] {
-  opacity: 0.9;
-}
-
 .opacity-\[0\.8\] {
   opacity: 0.8;
+}
+
+.opacity-\[0\.9\] {
+  opacity: 0.9;
 }
 
 .shadow-lg {
@@ -1184,5 +1180,10 @@ video {
   .xl\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .xl\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
